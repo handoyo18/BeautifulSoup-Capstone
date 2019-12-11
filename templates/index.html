@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inflation</title>
+</head>
+
+<body>
+    <!-- this for the box that countaints our plot -->
+    <div class="container-fluid"> 
+        <div class="jumbotron col-8 offset-2">
+            <h1 class="mb-2">Skeleton</h1>  <!-- You can change the title here -->
+            <div class="plot-area mt-4">
+                <div class="plot" id="train_vis"></div>
+            </div>
+        </div>
+        <!-- This for the data table -->
+        <div class="row">
+            <div class="col-8 offset-2">
+                {{  table | safe }}
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- This for the bootstrap and rendering altair -->
+<!-- Don't need to change these -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.3.1/vega.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.6.0/vega-lite.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.20.0/vega-embed.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- This is the css -->
+<style>
+    body {
+        background: #add2c9;
+        font-size: 0.7rem;
+    }
+</style>
+
+<!-- This part is script for rendering the plot (Altair) -->
+<script type="text/javascript">
+    function parse(url, div) {
+        var opt = {
+            mode: "vega-lite",
+            renderer: "svg",
+            actions: { export: false, source: false, editor: false }
+        };
+        //var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+
+        vegaEmbed(div, url, opt).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    }
+    parse("/charts", "#train_vis") // This is the path you put the plot, if nessesary you only need to change this at all part 
+</script>
+
+</html>
