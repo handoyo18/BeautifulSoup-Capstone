@@ -1,14 +1,19 @@
-# Web-Scrapping using beautiful soup 
+# Web-Scrapping using Beautifulsoup
 
-This is developed as one of Algoritma Academy Data Analytics Specialization using capstone Projects. The deliverables of this project is a Simple flask dashboard that can visualize the data we get from web scrapping. For step by step guide, you can check out my git. [Click here](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup "Webscrapping with Beautiful Soup").
+This is developed as one of Algoritma Academy Data Analytics Specialization using capstone Projects. The deliverables of this project is doing a simple web scrapping to extract some information from a table. For step by step guide, you can check out my git [Click here](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup "Webscrapping with Beautiful Soup"). We will also utilize the simple flask dashboard to do a simple visualisation from the data we got.
 
 ## Dependencies
 
 - beautifulSoup4
 - pandas
-- matplotlibs
 - flask
 - altair
+
+or you can simply install using the requierments.txt
+
+```python
+pip install -r requirements.txt
+```
 
 ## Rubics
 
@@ -16,10 +21,10 @@ This is developed as one of Algoritma Academy Data Analytics Specialization usin
 * Finding the right key to scrap the data
 * Extracting the right information
 * Data wrangling
-* Creating data.Frame
+* Creating data frame
 * Implement it on flask dashboard
 
-## What you need to do
+## What You Need to Do
 
 * You can clone this repo.
 * File in this repo is a skeleton that you can use for making a simple flask dashboard.
@@ -46,4 +51,3 @@ df = scrap(...) #insert url here
 ```
 
 * You also can play with the ui at `index.html` which you can follow the comment to know which part you can change.
-
