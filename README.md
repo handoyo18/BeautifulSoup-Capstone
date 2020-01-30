@@ -42,7 +42,7 @@ tr = table.find_all(___)
 df = pd.DataFrame(name of your tupple, columns = (name of the columns))
 ```
 
-* Lastly you can use your scrap function at function for making table and chart. Fill the parameter with the link. Terakhir Bapak/Ibu dapat menggunakan fungsi `scrap` dengan cara mengisi bagian berikut dengan link web yang Bapak/Ibu scrap.
+* Terakhir Bapak/Ibu dapat menggunakan fungsi `scrap` dengan cara mengisi bagian berikut dengan link web yang Bapak/Ibu scrap.
 
 ```python
 df = scrap(___) #insert url here
@@ -54,15 +54,15 @@ df = scrap(___) #insert url here
 
 Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
 
-1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari bi.go.id/id/moneter/informasi-kurs/transaksi-bi
+1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `bi.go.id/id/moneter/informasi-kurs/transaksi-bi`
 
     * Dari halaman tersebut carilah `Kurs beli` dan `tanggal`
     * Bualah plot pergerakan `kurs beli` JPY pada tahun 2019
 
-2. Data film yang rilis di tahun 2019 dari imdb.com/search/title/?release_date=2019-01-01,2019-12-31
+2. Data film yang rilis di tahun 2019 dari `imdb.com/search/title/?release_date=2019-01-01,2019-12-31`
 
-    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, & `votes`
-    * Buatlah plot dari 7 film paling populer di tahun 2019. 
+    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, dan `votes`
+    * Buatlah plot dari 7 film paling populer di tahun 2019.
 
 
 Happy learning~
