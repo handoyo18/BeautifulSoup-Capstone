@@ -7,9 +7,9 @@ This is developed as one of Algoritma Academy Data Analytics Specialization usin
 - beautifulSoup4
 - pandas
 - flask
-- altair
+- matplotlib
 
-or you can simply install using the requierments.txt
+or you can simply install using the requirements.txt
 
 ```python
 pip install -r requirements.txt
@@ -17,12 +17,11 @@ pip install -r requirements.txt
 
 ## Rubics
 
-* Doing a request
-* Finding the right key to scrap the data
-* Extracting the right information
-* Data wrangling
-* Creating data frame
-* Implement it on flask dashboard
+- Environment preparation (2 points)
+- Finding the right key to scrap the data  & Extracting the right information (6 points)
+- Creating data frame & Data wrangling (6 points)
+- Implement it on flask dashboard (2 points)
+
 
 ## What You Need to Do
 
@@ -51,3 +50,17 @@ df = scrap(...) #insert url here
 ```
 
 * You also can play with the ui at `index.html` which you can follow the comment to know which part you can change.
+
+### The Final Mission 
+
+Pada captsone kali ini, Bapak Ibu bisa memilih beberapa website ini untuk discrapping. 
+
+- Data inflasi Indonesia dari bi.go.id/id/moneter/inflasi/data
+
+- Data Harga kereta api dari Jakarta menuju ke Bandung hari ini dari tiket.com/kereta-api
+
+- Data product lipstik dari Bukalapak.com
+
+Silahkan pilih 1 aspek yang Bapak Ibu ingin visualisasikan. 
+
+Happy learning~
