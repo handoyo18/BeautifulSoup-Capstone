@@ -2,7 +2,9 @@ from flask import Flask, render_template
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup 
-import altair as alt 
+from io import BytesIO
+import base64
+import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
@@ -12,8 +14,8 @@ def scrap(url):
     soup = BeautifulSoup(url_get.content,"html.parser")
     
     #Find the key to get the information
-    table = soup.find(...) 
-    tr = table.find_all(...) 
+    table = soup.find(___) 
+    tr = table.find_all(___) 
 
     temp = [] #initiating a tuple
 
@@ -27,11 +29,11 @@ def scrap(url):
 
 
 
-        temp.append((...)) #append the needed information 
+        temp.append((___)) #append the needed information 
     
     temp = temp[::-1] #remove the header
 
-    df = pd.DataFrame(temp, columns = (....)) #creating the dataframe
+    df = pd.DataFrame(temp, columns = (___)) #creating the dataframe
    #data wranggling -  try to change the data type to right data type
 
    #end of data wranggling
@@ -39,28 +41,26 @@ def scrap(url):
     return df
 
 @app.route("/")
-# This fuction for rendering the table
 def index():
-    df = scrap(...) #insert url here
+    df = scrap(___) #insert url here
+
+    #This part for rendering matplotlib
+    fig = plt.figure(figsize=(5,2),dpi=300)
+    df.plot()
+    
+    #Do not change this part
+    plt.savefig('plot1',bbox_inches="tight") 
+    figfile = BytesIO()
+    plt.savefig(figfile, format='png')
+    figfile.seek(0)
+    figdata_png = base64.b64encode(figfile.getvalue())
+    result = str(figdata_png)[2:-1]
+    #This part for rendering matplotlib
+
+    #this is for rendering the table
     df = df.to_html(classes=["table table-bordered table-striped table-dark table-condensed"])
 
-    return render_template("index.html", table=df)
-
-
-@app.route("/charts")
-# This fuction for rendering the plot
-def charts():
-    df = scrap(...) #insert url here
-
-    chart = (
-        alt.Chart(df)
-        .encode( 
-            # Put the x and y
-        )
-        .mark_bar() # Choose the plot type here
-        .interactive() # To make the plot interactive 
-    )
-    return chart.to_json() 
+    return render_template("index.html", table=df, result=result)
 
 
 if __name__ == "__main__": 

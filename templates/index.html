@@ -14,7 +14,8 @@
         <div class="jumbotron col-8 offset-2">
             <h1 class="mb-2">Skeleton</h1>  <!-- You can change the title here -->
             <div class="plot-area mt-4">
-                <div class="plot" id="train_vis"></div>
+                <!-- rendering plot, you can change the plot size here -->
+                <img src="data:image/png;base64,{{ result }}" width="500"></div>
             </div>
         </div>
         <!-- This for the data table -->
@@ -43,22 +44,5 @@
         font-size: 0.7rem;
     }
 </style>
-
-<!-- This part is script for rendering the plot (Altair) -->
-<script type="text/javascript">
-    function parse(url, div) {
-        var opt = {
-            mode: "vega-lite",
-            renderer: "svg",
-            actions: { export: false, source: false, editor: false }
-        };
-        //var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
-
-        vegaEmbed(div, url, opt).then(function (result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-    }
-    parse("/charts", "#train_vis") // This is the path you put the plot, if nessesary you only need to change this at all part 
-</script>
 
 </html>
