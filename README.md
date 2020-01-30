@@ -1,6 +1,6 @@
 # Web-Scrapping using Beautifulsoup
 
-This is developed as one of Algoritma Academy Data Analytics Specialization using capstone Projects. The deliverables of this project is doing a simple web scrapping to extract some information from a table. For step by step guide, you can check out my git [Click here](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup "Webscrapping with Beautiful Soup"). We will also utilize the simple flask dashboard to do a simple visualisation from the data we got.
+Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan simple webscrapping untuk mendapatkan informasi. Untuk step by step guide, Bapak Ibu dipersilahkan untuk membuka git saya [Click here](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup "Webscrapping with Beautiful Soup"). Kita juga akan memanfaatkan flask dashboard sederhana untuk menampilkan hasil scrap dan visualisasi kita.
 
 ## Dependencies
 
@@ -9,7 +9,7 @@ This is developed as one of Algoritma Academy Data Analytics Specialization usin
 - flask
 - matplotlib
 
-or you can simply install using the requirements.txt
+Atau Bapak Ibu cukup menginstall requirements.txt dengan cara berikut
 
 ```python
 pip install -r requirements.txt
@@ -25,42 +25,44 @@ pip install -r requirements.txt
 
 ## What You Need to Do
 
-* You can clone this repo.
-* File in this repo is a skeleton that you can use for making a simple flask dashboard.
-* You can fill the blank part at the skeleton.
-* You can try to scrap the information from this sites : (link)
-* fill function `scrap` with scrapping process. You need fill this part with the key to get the infromation from the webpage.
+* Silahkan mencoba melakukan scraping soal di bawah menggunakan `beautiful soup` di notebook Bapak/Ibu terlebih dahulu.
+* Bapak/Ibu dapat men-clone repo ini.
+* File di repo ini adalah skeleton yang dapat digunakan untuk membuat flask dashboard sederhana.
+* Silahkan isi di bagian yang masih kosong.
+* Isi fungsi `scrap` dengan proses scraping yang sudah Bapak/Ibu lakukan di notebook. 
 
 ```python
-table = soup.find(...)
-tr = table.find_all(...)
+table = soup.find(___)
+tr = table.find_all(___)
 ```
 
-* Then you can extract the infromation per row with looping.
-* Save here to save your scrapping data as csv.
+* Isi bagian ini untuk menyimpan hasil scrap yang Bapak/Ibu buat menjadi sebuah dataframe.
 
 ```python
 df = pd.DataFrame(name of your tupple, columns = (name of the columns))
 ```
 
-* Lastly you can use your scrap function at function for making table and chart. Fill the parameter with the link.
+* Lastly you can use your scrap function at function for making table and chart. Fill the parameter with the link. Terakhir Bapak/Ibu dapat menggunakan fungsi `scrap` dengan cara mengisi bagian berikut dengan link web yang Bapak/Ibu scrap.
 
 ```python
-df = scrap(...) #insert url here
+df = scrap(___) #insert url here
 ```
 
-* You also can play with the ui at `index.html` which you can follow the comment to know which part you can change.
+* Bapak/Ibu juga dapat bermain dengan UI nya pada `index.html` yang dimana Bapak/Ibu dapat mengikuti comment yang ada untuk mengetahui bagian mana yang dapat diubah. 
 
-### The Final Mission 
+### The Final Mission
 
-Pada captsone kali ini, Bapak Ibu bisa memilih beberapa website ini untuk discrapping. 
+Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
 
-- Data kurs Japan Yen ke rupiah pada tahun 2019 dari bi.go.id/id/moneter/informasi-kurs/transaksi-bi
+1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari bi.go.id/id/moneter/informasi-kurs/transaksi-bi
 
-- Data film yang rilis di tahun 2019 dari imdb.com/search/title/?release_date=2019-01-01,2019-12-31
+    * Dari halaman tersebut carilah `Kurs beli` dan `tanggal`
+    * Bualah plot pergerakan `kurs beli` JPY pada tahun 2019
 
-- Data product lipstik dari Bukalapak.com
+2. Data film yang rilis di tahun 2019 dari imdb.com/search/title/?release_date=2019-01-01,2019-12-31
 
-Silahkan pilih 1 aspek yang Bapak/Ibu ingin visualisasikan. 
+    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, & `votes`
+    * Buatlah plot dari 7 film paling populer di tahun 2019. 
+
 
 Happy learning~
