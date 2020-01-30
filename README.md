@@ -55,12 +55,12 @@ df = scrap(...) #insert url here
 
 Pada captsone kali ini, Bapak Ibu bisa memilih beberapa website ini untuk discrapping. 
 
-- Data inflasi Indonesia dari bi.go.id/id/moneter/inflasi/data
+- Data kurs Japan Yen ke rupiah pada tahun 2019 dari bi.go.id/id/moneter/informasi-kurs/transaksi-bi
 
-- Data Harga kereta api dari Jakarta menuju ke Bandung hari ini dari tiket.com/kereta-api
+- Data film yang rilis di tahun 2019 dari imdb.com/search/title/?release_date=2019-01-01,2019-12-31
 
 - Data product lipstik dari Bukalapak.com
 
-Silahkan pilih 1 aspek yang Bapak Ibu ingin visualisasikan. 
+Silahkan pilih 1 aspek yang Bapak/Ibu ingin visualisasikan. 
 
 Happy learning~
