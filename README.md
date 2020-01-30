@@ -54,9 +54,9 @@ df = scrap(___) #insert url here
 
 Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
 
-1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `bi.go.id/id/moneter/informasi-kurs/transaksi-bi`
+1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY`
 
-    * Dari halaman tersebut carilah `Kurs beli` dan `tanggal`
+    * Dari halaman tersebut carilah `kurs jual`, `Kurs beli` dan `tanggal`
     * Bualah plot pergerakan `kurs beli` JPY pada tahun 2019
 
 2. Data film yang rilis di tahun 2019 dari `imdb.com/search/title/?release_date=2019-01-01,2019-12-31`
