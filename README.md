@@ -18,8 +18,9 @@ pip install -r requirements.txt
 ## Rubics
 
 - Environment preparation (2 points)
-- Finding the right key to scrap the data  & Extracting the right information (6 points)
-- Creating data frame & Data wrangling (6 points)
+- Finding the right key to scrap the data  & Extracting the right information (5 points)
+- Creating data frame & Data wrangling (5 points)
+- Craating a tidy python notebook as a report. (2 points)
 - Implement it on flask dashboard (2 points)
 
 
