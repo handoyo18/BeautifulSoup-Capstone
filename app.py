@@ -5,8 +5,11 @@ from bs4 import BeautifulSoup
 from io import BytesIO
 import base64
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 
-app = Flask(__name__)
+
+app = Flask(__name__) #don't change this code
 
 def scrap(url):
     #This is fuction for scrapping
