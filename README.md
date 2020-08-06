@@ -54,10 +54,10 @@ df = scrap(___) #insert url here
 
 Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
 
-1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `monexnews.com/kurs-valuta-asing.htm?kurs=JPY`
+1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `https://news.mifx.com/kurs-valuta-asing?kurs=JPY`
 
     * Dari halaman tersebut carilah `kurs jual`, `Kurs beli` dan `tanggal`
-    * Bualah plot pergerakan kurs JPY pada tahun 2019
+    * Bualah plot pergerakan kurs JPY pada tahun 2020
 
 2. Data film yang rilis di tahun 2019 dari `imdb.com/search/title/?release_date=2019-01-01,2019-12-31`
 
