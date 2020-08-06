@@ -27,6 +27,7 @@ pip install -r requirements.txt
 
 * Silahkan mencoba melakukan scraping soal di bawah menggunakan `beautiful soup` di notebook Bapak/Ibu terlebih dahulu.
 * Bapak/Ibu dapat men-clone repo ini.
+* Silahkan buka notebook template pada capstone ini dan isi sesuai dengan arahan yang ada. Pastikan Bapak/Ibu memberikan analisa yang dibutuhkan pada notebook tersebut.
 * File di repo ini adalah skeleton yang dapat digunakan untuk membuat flask dashboard sederhana.
 * Silahkan isi di bagian yang masih kosong.
 * Isi fungsi `scrap` dengan proses scraping yang sudah Bapak/Ibu lakukan di notebook. 
@@ -54,7 +55,7 @@ df = scrap(___) #insert url here
 
 Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
 
-1. Data kurs Japan Yen ke rupiah pada tahun 2019 dari `https://news.mifx.com/kurs-valuta-asing?kurs=JPY`
+1. Data kurs Japan Yen ke rupiah pada tahun 2020 dari `https://news.mifx.com/kurs-valuta-asing?kurs=JPY`
 
     * Dari halaman tersebut carilah `kurs jual`, `Kurs beli` dan `tanggal`
     * Bualah plot pergerakan kurs JPY pada tahun 2020
@@ -65,4 +66,4 @@ Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerja
     * Buatlah plot dari 7 film paling populer di tahun 2019.
 
 
-Happy learning~
+Happy learning! 
