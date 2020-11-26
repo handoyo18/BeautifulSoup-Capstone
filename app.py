@@ -41,7 +41,9 @@ def index():
 
 	# generate plot
 	ax = ______.plot(figsize = (20,9))
-
+	
+	# Rendering plot
+	# Do not change this
 	figfile = BytesIO()
 	plt.savefig(figfile, format='png', transparent=True)
 	figfile.seek(0)
