@@ -15,19 +15,23 @@ app = Flask(__name__) #do not change this
 url_get = requests.get('____')
 soup = BeautifulSoup(url_get.content,"html.parser")
 
+#find your right key here
 ____ = soup.find('___')
-___ = tbody.find_all('___')
-temp = [] #initiating a tuple
+___ = ____.find_all('___')
 
-for i in range(1, len(tr)):
+row_length = len(___)
+
+temp = [] #initiating a list 
+
+for i in range(1, row_length):
 #insert the scrapping process here
     
-    temp.append((____,____)) 
+    temp.append((____,____,____)) 
 
 temp = temp[::-1]
 
 #change into dataframe
-data = pd.DataFrame(____, columns = ('____','_____'))
+data = pd.DataFrame(____, columns = ('____','_____','_____'))
 
 #insert data wrangling here
 
@@ -37,10 +41,10 @@ data = pd.DataFrame(____, columns = ('____','_____'))
 @app.route("/")
 def index(): 
 	
-	card_data = f'USD {data["____"].mean().round(2)}'
+	card_data = f'{data["____"].mean().round(2)}' #be careful with the " and ' 
 
 	# generate plot
-	ax = ______.plot(figsize = (20,9))
+	ax = ____.plot(figsize = (20,9)) 
 	
 	# Rendering plot
 	# Do not change this
@@ -49,7 +53,6 @@ def index():
 	figfile.seek(0)
 	figdata_png = base64.b64encode(figfile.getvalue())
 	plot_result = str(figdata_png)[2:-1]
-
 
 	# render to html
 	return render_template('index.html',
